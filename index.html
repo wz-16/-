@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的图片网页</title>
+    <style>
+        /* CSS 样式：让图片充满整个页面 */
+        body {
+            margin: 0; /* 移除页面默认的边距 */
+            padding: 0; /* 移除页面默认的内边距 */
+            background-color: #000; /* 设置背景色为黑色，图片加载前或有缝隙时更美观 */
+            display: flex; /* 使用Flexbox布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            min-height: 100vh; /* 确保body至少占满整个视口高度 */
+        }
+
+        .fullscreen-image {
+            max-width: 100%; /* 图片最大宽度不超过容器 */
+            max-height: 100vh; /* 图片最大高度不超过视口高度 */
+            width: auto; /* 宽度自动，保持宽高比 */
+            height: auto; /* 高度自动，保持宽高比 */
+            object-fit: contain; /* 确保图片完全可见，不会被裁剪 */
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML 内容：插入你的图片 -->
+    <!-- 请将下面的 "豹豹防伪.jpg" -->
+    <img src="豹豹防伪.jpg" alt="这是我的图片" class="fullscreen-image">
+</body>
+</html>
